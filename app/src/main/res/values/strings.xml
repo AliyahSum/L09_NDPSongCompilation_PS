@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NDP Song Compilation</string>
+
+    <string name="songtitle">Song Title</string>
+    <string name="SThint">Enter song title here</string>
+    <string name="singers">Singers</string>
+    <string name="singerHint">Enter singers\' name here</string>
+    <string name="year">Year</string>
+    <string name="yearHint">Enter year of release here</string>
+    <string name="stars">Stars</string>
+    <string name="insert">INSERT</string>
+    <string name="showList">Show List</string>
+
+    <string name="showAll">SHOW ALL SONGS WITH 5 STARS</string>
+    <string name="star1">1</string>
+    <string name="star2">2</string>
+    <string name="star3">3</string>
+    <string name="star4">4</string>
+    <string name="star5">5</string>
+
+    <string name="songID">Song ID</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel">CANCEL</string>
+</resources>

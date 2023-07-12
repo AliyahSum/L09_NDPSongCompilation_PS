@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/songtitle"/>
+    <EditText
+        android:id="@+id/etSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/SThint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singers"/>
+    <EditText
+        android:id="@+id/etSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/singerHint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year"/>
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/yearHint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stars"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButton1Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star1"/>
+        <RadioButton
+            android:id="@+id/radioButton2Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star2"/>
+        <RadioButton
+            android:id="@+id/radioButton3Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star3"/>
+        <RadioButton
+            android:id="@+id/radioButton4Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star4"/>
+        <RadioButton
+            android:id="@+id/radioButton5Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star5"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/insert"/>
+        <Button
+            android:id="@+id/buttonShowList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/showList"/>
+    </LinearLayout>
+</LinearLayout>
