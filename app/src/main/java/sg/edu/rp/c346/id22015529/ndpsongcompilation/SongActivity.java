@@ -26,5 +26,7 @@ public class SongActivity extends AppCompatActivity {
         Intent intentReceived = getIntent() ;
 
         alSong = new ArrayList<>() ;
+
+        Song song1 = new Song()
     }
 }
