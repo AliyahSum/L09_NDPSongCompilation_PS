@@ -2,14 +2,17 @@ package sg.edu.rp.c346.id22015529.ndpsongcompilation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class MainActivity extends AppCompatActivity {
     EditText etSongTitle, etSingers, etYear ;
     RadioGroup rgStars ;
     Button btnInsert, btnViewList ;
@@ -37,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 int stars = rgStars.getCheckedRadioButtonId() ;
 
                 db.insertSong(title, singers, year, stars);
+            }
+        });
+
+        btnViewList.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SongActivity.class) ;
+                startActivity(intent) ;
             }
         });
 
